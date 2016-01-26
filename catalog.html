@@ -11,7 +11,7 @@
 <header class="main-header">
     <div class="container">
         <h1>ТЕХНОМАРТ</h1>
-        <h2>Поиск</h2>
+        <input type="text">Поиск</input>
         <nav class="top-navigation">
             <ul>
                 <li>
@@ -95,40 +95,32 @@
     
 <!--Блок "Перфораторы"-->
    
-   <div class="perforator">
-       <h2>Перфораторы</h2>
-   </div>
-   
+      <h2>Перфораторы</h2>
+      
 <!--Блок фильтр + сортировка-->
    
    <div class="filter-sorting">
-       <h2>Фильтр</h2>
-   </div>
-   <div class="filter-sorting">
+       <h2>Фильтр</h2>  
        <h2>Сортировка:</h2>
-       <a href="#">По цене</a>
+       <a href="#" class="selected">По цене</a>
        <a href="#">По типу</a>
        <a href="#">По функционалу</a>
    </div>
    
 <!--Фильтр слева в виде формы-->
 
-    <div class="filters-main-div">
+    <div class="all-filters-main-div">
         <h2>Цена</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
         <div class="filters-pricing-gear">
             тут будет бегунок
         </div>
-        <div class="price-index">
-            <b>0</b>
-        </div>
-        <b>-</b>
-        <div class="price-index">
-            <b>30000</b>
-        </div>
-        <div class="strip">тут полоса разделитель</div>
+        <input type="text">0</input>
+        <input>-</input>
+        <input type="text">30000</input>
+        <hr>
         <div class="filters">
             <h2>Производители</h2>
-            <form action="https://echo.htmlacademy.ru" method="post">
             <label>
                 <input type="checkbox" checked> Bosch
                 </label><br>
@@ -145,8 +137,7 @@
                 <input type="checkbox" > Hitachi
                 </label><br>
         </div>
-        <div class="strip">тут полоса разделитель</div>
-        
+        <hr>
         <div class="filters">
             <h2>Питание</h2>
             <label>
@@ -156,87 +147,84 @@
                 <input type="checkbox"> Сетевые
                 </label><br>
             </div>
-            </form>
             <button class="show">Показать</button>
-    </div>
+            </form>
+        </div>
     
 <!--Блок каталога товаров 9шт.-->
    
    <div class="items">
       
-       <article class="popular">
+       <article class="items-list">
         <a href="#"><img src="http://placehold.it/150x100" alt="text"></a>
         <h3>Перфоратор BOSCH<br>
             BFG 3000</h3>
         <del>15500 Р.</del>
-        <a href="#" class="btn-popular">25500 P.</a>
+        <a href="#" class="btn-items-list">25500 P.</a>
     </article>
     
-    <article class="popular">
+    <article class="items-list">
         <a href="#"><img src="http://placehold.it/150x100" alt="text"></a>
         <h3>Перфоратор BOSCH<br>
             BFG 6000</h3>
         <del>25500 Р.</del>
-        <a href="#" class="btn-popular">25500 P.</a>
+        <a href="#" class="btn-items-list">25500 P.</a>
     </article>
     
-    <article class="popular">
-        <a class="btn-popular-buy">Купить</a>
+    <article class="items-list new">
+        <a class="btn-items-list-buy">Купить</a>
         <button class="bookmark">В закладки</button>
-        <b>new</b>
         <h3>Перфоратор BOSCH<br>
-            BFG 2000</h3>
+        BFG 2000</h3>
         <del>12500 Р.</del>
-        <a href="#" class="btn-popular">25500 P.</a>
+        <a href="#" class="btn-items-list">25500 P.</a>
     </article>
     
-    <article class="popular">
+    <article class="items-list">
         <a href="#"><img src="http://placehold.it/150x100" alt="text"></a>
         <h3>Перфоратор BOSCH<br>
             BFG 3000</h3>
         <del>15500 Р.</del>
-        <a href="#" class="btn-popular">25500 P.</a>
+        <a href="#" class="btn-items-list">25500 P.</a>
     </article>
     
-    <article class="popular">
+    <article class="items-list new">
         <a href="#"><img src="http://placehold.it/150x100" alt="text"></a>
-        <b>new</b>
         <h3>Перфоратор BOSCH<br>
             BFG 6000</h3>
         <del>25500 Р.</del>
-        <a href="#" class="btn-popular">25500 P.</a>
+        <a href="#" class="btn-items-list">25500 P.</a>
     </article>
     
-    <article class="popular">
+    <article class="items-list">
         <a href="#"><img src="http://placehold.it/150x100" alt="text"></a>
         <h3>Перфоратор BOSCH<br>
             BFG 2000</h3>
         <del>12500 Р.</del>
-        <a href="#" class="btn-popular">25500 P.</a>
+        <a href="#" class="btn-items-list">25500 P.</a>
     </article>
     
-    <article class="popular">
+    <article class="items-list new">
         <a href="#"><img src="http://placehold.it/150x100" alt="text"></a>
         <h3>Перфоратор BOSCH<br>
-            BFG 3000</h3>
-            <b>new</b>
+        BFG 3000</h3>
         <del>22500 Р.</del>
-        <a href="#" class="btn-popular">15500 P.</a>
+        <a href="#" class="btn-items-list">15500 P.</a>
     </article>
     
-    <article class="popular">
+    <article class="items-list">
         <a href="#"><img src="http://placehold.it/150x100" alt="text"></a>
         <h3>Перфоратор BOSCH<br>
             BFG 6000</h3>
         <del>30500 Р.</del>
-        <a href="#" class="btn-popular">25500 P.</a>
+        <a href="#" class="btn-items-list">25500 P.</a>
     </article>
     
-    <article class="popular">
+    <article class="items-list">
         <a href="#"><img src="http://placehold.it/150x100" alt="text"></a>
         <h3>Перфоратор BOSCH<br>
             BFG 2000</h3>
-        <a href="#" class="btn-popular">12500 P.</a>
+        <a href="#" class="btn-items-list">12500 P.</a>
     </article>
    </div>
     
