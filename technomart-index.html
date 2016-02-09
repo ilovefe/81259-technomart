@@ -12,42 +12,33 @@
 
    <header class="main-header">
     <div class="container">
-        <h1>Техномарт</h1>
-        <input type="text">Поиск</input>
-        <nav class="top-navigation">
-            <ul>
-                <li>
-                    <a href="#">Закладки: 0</a>
-                </li>
-                <li>
-                    <a href="#">Корзина: 0</a>
-                </li>
-                <li>
-                    <a href="#" class="checkout">Оформить заказ</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+        <div class="name"><h1>Техномарт</h1></div>
+        <div class="search">Поиск</div>
+        <div class="bookmarks"><a href="#">Закладки: 0</a></div>
+        <div class="basket"><a href="#">Корзина: 0</a></div>
+        <div class="checkout"><a href="#">Оформить заказ</a></div>
+       </div>
     </header>
     
-<!--Блок описания магазина, адрес и телефон, вход и регистрация, навигация-->
+<!--!--Блок описания магазина, адрес и телефон, имя + мои заказы, имя пользователя, навигация-->
 
   <header class="second-header">
    <div class="container">
-       <section class="about-company">
+       <section class="second-header-description">
            <p>Интернет магазин<br>
                строительных материалов<br>
                и инструментов для ремонта</p>
        </section>
-       <section class="company-contacts">
-           <p class="phone">+7 &#40;812&#41; 555-05-55</p>
+       <section class="second-header-contact">
+           <div class="phone">+7 &#40;812&#41; 555-05-55</div>
            <p>г. Санкт-Петербург, ул. Б. Конушенная, д. 19/8</p>
        </section>
-       <section class="company-login">
-           <a class="enter-reg" href="#">Войти</a>
-           <a class="enter-reg" href="#">Регистрация</a>
+       <section class="second-header-user-name">
+           <span class="enter"><a class="" href="#">Войти</a></span>
+           <span class="registration"><a class="" href="#">Регистрация</a></span>
        </section>
-        <div class="container">
+       
+        <div class="container clearfix">
         <nav class="main-navigation">
         <ul>
             <li>
@@ -97,31 +88,36 @@
         <b>Техника</b>
         <a href="#" class="btn-benefits">Для стройки</a>
     </section>
-    <section class="benefits">
+    <section class="benefits-r">
        <img src="img/benefits_logo4.png" alt="">
         <b>Скидки 50%</b>
         <a href="#" class="btn-benefits">На 350 товаров</a>
+    </section>
+    
+    <section class="slide">
+<!--
+        <h2 class="slider">Перфораторы</h2>
+        <p>Настоящие мужские игрушки</p>
+-->
+        <img src="img/for_slider_man_bosch.jpg" alt="">
+<!--        <a href="#" class="btn-slide">Открыть каталог</a>-->
     </section>
     <section class="benefits">
        <img src="img/benefits_logo5.png" alt="">
         <b>Доставка</b>
         <a href="#" class="btn-benefits">Бесплатно</a>
     </section>
-    <section class="slide">
-        <h2 class="slider">Перфораторы</h2>
-        <p>Настоящие мужские игрушки</p>
-        <img src="img/for_slider_man_bosch.jpg" alt="">
-        <a href="#" class="btn-slide">Открыть каталог</a>
-    </section>
     </div>
     
 <!--Блок и кнопка "Популярные товары"-->
-    
-    <div class="items-list-goods-manufactures">
-        <h2>Популярные товары</h2>
-        <a href="#" class="btn-popular-goods-manufactures">Все популярные товары</a>
-    </div>
-    
+   
+       <div class="bord">
+          <ul class="populars">
+           <li class="populars-items">Популярные товары</li>
+           <li class="btn-popular-items"><a href="#">Все популярные товары</a></li>
+       </ul>
+       </div>
+            
 <!--4 блока популярных товаров-->
     
     <article class="items-list">
@@ -153,15 +149,18 @@
     
 <!--Популярные производители + кнопка-->
     
-    <div class="items-list-goods-manufactures">
-        <h2>Популярные производители</h2>
-        <a href="#" class="btn-popular-goods-manufactures">Все производители</a>
-    </div>
+    <div class="bord">
+          <ul class="populars">
+           <li class="populars-brands">Популярные производители</li>
+           <li class="btn-popular-items"><a href="#">Все производители</a></li>
+       </ul>
+       </div>
     
 <!--Логотипы брендов-->
-   <div class="all-brand-logo">
+  
+   <div class="all-brand-logo clearfix">
    <div class="brand-logo">
-       <img src="img/brand_logo1_bosch.jpg">
+       <p class="center" ><img src="img/brand_logo1_bosch.jpg"></p>
    </div>
    <div class="brand-logo">
        <img src="img/brand_logo2_Makita.jpg" alt="text">
@@ -185,16 +184,19 @@
        <img src="img/brand_logo8_Metabo.jpg" alt="text">
    </div>
    </div>
+   </main>
     
 <!--Большой блок с кнопками Доставка, Гарантия, Кредит-->
    
-   <div class="service">
-       <h3>Сервисы</h3>
-       <p>Хороший интернет-магазин отличается от плохого не только     ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+   <div class="service clearfix">
+      <div class="container">
+       <h3 class="service-text">Сервисы</h3>
+       <p>Хороший интернет-магазин отличается от плохого не только     ценами!<br>
+           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
     <section class="buttons-of-service">
-        <button class="buttons-active">Доставка</button>
-        <button class="buttons">Гарантия</button>
-        <button class="buttons">Кредит</button>
+        <button class="buttons-serv-active">Доставка</button>
+        <button class="buttons-serv">Гарантия</button>
+        <button class="buttons-serv">Кредит</button>
     </section>
     <section class="buttons-result">
         <h3 class="buttons-result-delivery">Доставка</h3>
@@ -206,13 +208,15 @@
     <section class="truck">
         <img src="img/track_and_shadow.png">
     </section>
+       </div>
    </div>
    
 <!--О компании и контакты-->
    
+   <div class="container">
    <section class="about">
-       <h3 class="company">Компания Техномар</h3>
-       <p>Настоящий мужской шоппинг начинается здесь! Огромный         выбор товара для ремонта и
+       <h3 class="company">Компания Техномарт</h3>
+       <p>Настоящий мужской шоппинг начинается здесь! Огромный         выбор товара для ремонта и<br>
            строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки      России!
             Техномарт работает со многими транспортными компаниями:</p>
@@ -229,22 +233,23 @@
             </ul>
             <a class="btn-company" href="#">Подробнее о компании</a>
    </section>
+   
    <section class="contacts">    
         <h3 class="company">Контакты</h3>
         <p>Вы можете забрать товар сами,
             заехав в наш офис</p>
-        <img src="img/map.png" alt="text">
+        <img src="img/map.png" alt="text"><br>
         <a class="btn-contacts" href="#">Заблудились? Напишите нам!</a>
-   </section>
-   </main>
+        </section>
+        </div>
+   
 
 <!--Основной футер-->
 
-    <footer class="main-footer">
-        <div class="conteiner">
+   <footer class="main-footer clearfix">
+        <div class="container">
             <h2 class="company-footer">Техномарт</h2>
-            <nav class="nav-in-main-footer">
-                <ul>
+                <ul class="nav-in-main-footer">
                     <li>
                         <a href="#">Компания</a>
                     </li>
@@ -258,12 +263,11 @@
                         <a href="#">Контакты</a>
                     </li>
                 </ul>
-            </nav>
         </div>
+        
         <div class="container">
-            <p>г. Санкт-Петербург, ул. Б. Конушенная, д. 19/8<br>    +7 &#40;812&#41; 555-05-55</p>
-            <nav class="nav-in-main-footer-second">
-                <ul>
+            <p class="adress">г. Санкт-Петербург, ул. Б. Конушенная, д. 19/8<br>    +7 &#40;812&#41; 555-05-55</p>
+                <ul class="nav-in-main-footer-second">
                     <li>
                         <a href="#">Материалы</a>
                     </li>
@@ -275,19 +279,18 @@
                         <a href="#">Спецпредложения</a>
                     </li>
                 </ul>
-            </nav>
-        </div>
+            </div>
     </footer>
 
 <!--Нижний футер-->
 
-    <footer class="last-footer">
+    <footer class="last-footer clearfix">
         <div class="container">
             <section class="last-footer-rights">
-                <p>&copy;</p> 2010-2016 Компания "Техномарт"
+                2010-2016 Компания "Техномарт"<br>
                 Все права защищены
             </section>
-            <section class="social-block">
+            <section class="last-footer-social">
                 <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
                 <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
                 <a class="social-btn social-btn-inst" href="#">Инстаграм</a>

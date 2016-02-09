@@ -1,18 +1,25 @@
 body {
     font-family: 'Cuprum', sans-serif;;
     font-size: 14px;
+    margin: 0;
 }
 
-=================================================
-Офрормление заголовков
-=================================================
+p, ul, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+/**************************************************
+Офрормление заголовков Техномарт
+**************************************************/
 
 h1 {
+    margin: 0;
     font-size: 24px;
     text-transform: uppercase;
     font-weight: bolder;
     color: #ffffff;
-/*    line-height: 0.7;*/
+    
 }
 
 h2 {
@@ -20,6 +27,7 @@ h2 {
     text-transform: uppercase;
     font-weight: normal;
     color: #32425c;
+    width: 200px;
 }
 
 h2.slider {
@@ -35,4 +43,453 @@ h2.slider {
     text-transform: uppercase;
     font-weight: bolder;
     color: #ffffff;
+}
+
+/**************************************************
+Офрормление main-header
+**************************************************/
+
+.main-header {
+    width: auto;
+    background: #293449;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.name {
+    font-size: 24px;
+    line-height: 24px;
+    font-family: 'Cuprum';
+    font-weight: bold;
+    background: #ee3643;
+    display: inline-block;
+    padding: 11px 50px 11px 50px;
+    margin-right: 20px;
+}
+
+.search {
+    font-size: 17px;
+    line-height: 18px;
+    width: 70px;
+    display: inline-block;
+    color: white;
+    margin-right: 160px;
+}
+
+.bookmarks, .basket, .basket-active, .checkout {
+    display: inline-block;
+/*    width: 150px;*/
+    font-size: 17px;
+    line-height: 18px;
+    padding: 15px 25px;
+}
+
+.basket-active {
+    background: #ee3643;
+}
+
+.checkout {
+    background: #63a63e;
+}
+
+/**************************************************
+Офрормление second-header
+**************************************************/
+
+.second-header {
+    background: #f2f6f8;
+}
+
+.second-header-description, .second-header-contact, .second-header-user-name {
+    float: left;
+}
+
+.second-header-description {
+    width: 200px;
+    margin: 40px 45px 35px 50px;
+}
+
+.second-header-contact {
+    width: 265px;
+    margin: 40px 45px 35px 0;
+}
+
+.second-header-contact .phone {
+    border: 1px solid white;
+}
+
+.second-header-user-name {
+    width: 300px;
+    margin: 40px 0 35px 0;
+}
+
+.main-navigation {
+    clear: both;
+}
+
+/**************************************************
+Офрормление main-navigation
+**************************************************/
+
+.main-navigation li{
+    display: inline-block;
+    font-size: 17px;
+    padding: 20px;
+}
+
+.main-navigation li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-navigation {
+    background: #32425c;
+    margin-bottom: 60px;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/**************************************************
+Главная!!! Слайдер и цветные блоки
+**************************************************/
+
+.benefits {
+    width: 280px;
+    background: grey;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.benefits-r {
+    width: 280px;
+    background: grey;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.slide {
+    float: left;
+    margin-right: 20px;
+}
+
+/**************************************************
+Главная!!! заголовок "Популярные товары + кнопка
+**************************************************/
+
+.bord {
+    background: #f7f3ec;
+    clear: both;
+}
+
+.populars li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.populars li.populars-items {
+    font-size: 30px;
+    padding: 30px 370px 30px 30px;
+}
+
+.populars li.populars-brands {
+    padding: 30px 260px 30px 30px;
+    font-size: 30px;
+}
+
+.populars li.btn-popular-items {
+    font-size: 14px;
+    line-height: 18px;
+    background: #ee3643;
+    padding: 10px 50px;
+    border-radius: 3px;
+}
+
+.populars li.btn-popular-items a {
+    color: white;
+    text-decoration: none;
+}
+
+/**************************************************
+Главная!!! логотипы брендов
+**************************************************/
+
+.brand-logo {
+    min-height: 145px;
+    width: 220px;
+    float:left; 
+    border: 1px solid #e5e5e5;
+    margin: 10px 10px 10px 0;
+    
+}
+
+.brand-logo img {
+/*    background-position: 50% 50%;*/
+}
+
+/**************************************************
+Главная!!! блок с грузовиком
+**************************************************/
+
+.service {
+    background: #f2f6f8;
+}
+
+.service-text {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 60px 0 35px 0;
+}
+
+.service-text + p {
+    line-height: 18px;
+    padding-bottom: 30px;
+}
+
+.buttons-of-service, .buttons-result, .truck {
+    float: left;
+}
+
+.buttons-serv {
+    display: block;
+    margin-right: 50px;
+}
+
+.buttons-result {
+    width: 280px;
+}
+
+/**************************************************
+Главная!!! О компании и карта
+**************************************************/
+
+.about, .contacts {
+    float: left;
+}
+
+.about {
+    width: 550px;
+}
+
+.main-footer {
+    clear: both;
+}
+/**************************************************
+Офрормление breadcrumbs
+**************************************************/
+
+.breadcrumbs li {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 20px 0;
+}
+
+/**************************************************
+Офрормление блока "Перфораторы"
+**************************************************/
+
+.perforator {
+    background: #f2f6f8;
+    width: 910px;
+    padding: 25px 0 25px 30px;
+    margin-bottom: 20px;
+}
+
+/**************************************************
+Левая колонка блок "фильтр" + общий размер
+**************************************************/
+
+h3.filter {
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 12px 150px 12px 18px;
+    background: #f7f3ec;
+    display: inline-block;
+}
+
+.left-column {
+    width: 220px;
+    margin-right: 20px;
+}
+
+/**************************************************
+Правая колонка блок "фильтр" + общий размер
+**************************************************/
+
+.left-column, .right-column {
+    float: left;
+}
+
+.top-sorting li {
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 12px 0 12px 0;
+    background: #f7f3ec;
+    display: inline-block;
+    
+}
+
+.top-sorting .sorting {
+    padding-right: 140px;
+    margin-bottom: 20px;
+}
+
+
+/**************************************************
+Оформление товара
+**************************************************/
+
+.items {
+    width: 700px;
+}
+
+.items-list {
+    display: inline-block;
+    width: 220px;
+    border: 1px solid #f7f3ec;
+    text-align: center;
+    margin: 0 13px 20px 0;
+}
+
+.items-list:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.items-list .title {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.items-list .discount {
+    text-decoration: line-through;
+}
+
+.items-list .price {
+    font-size: 17px;
+    line-height: 18px;
+    padding: 12px 25px 12px 37px;
+    background: #ee3643;
+}
+
+/**************************************************
+Пагинация
+**************************************************/
+
+.pagination li{
+    display: inline-block;
+}
+
+.pagination {
+    clear: both;
+    margin: 50px 0 50px 240px;
+}
+
+/**************************************************
+Оформление "Пара слов о перфораторах"
+**************************************************/
+
+.about-perforators {
+    background: #f2f6f8;
+    width: auto;    
+    padding: 25px 0 25px 0;
+}
+
+h2.about-perforators {
+    font-size: 30px;
+    line-height: 24px;
+    color: black;
+}
+
+p.perforator-description {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+/**************************************************
+Оформление основной футер
+**************************************************/
+
+.main-footer {
+    width: auto;
+    background: #32425c;
+}
+
+h2.company-footer, .nav-in-main-footer {
+    float: left;
+}
+
+h2.company-footer {
+    width: 150px;
+    background: #ee3643;
+    padding: 20px 30px;
+}
+
+.nav-in-main-footer li, .nav-in-main-footer-second li {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 20px 20px;
+}
+
+.nav-in-main-footer li a, .nav-in-main-footer-second li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+p.adress {
+    padding: 20px 20px 0 0;
+    clear: both;
+}
+
+p.adress, .nav-in-main-footer-second {
+    float: left;
+}
+
+/**************************************************
+Оформление нижний футер / last-footer
+**************************************************/
+
+.last-footer {
+    width: auto;
+    background: #293449;
+}
+
+.last-footer-rights, .last-footer-social, .feedback, .made {
+    float: left;
+}
+
+.last-footer-rights {
+    padding: 35px 150px 35px 0;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.last-footer-social {
+        padding: 35px 60px 35px 0;
+}
+
+.feedback {
+    padding: 35px 30px 35px 0;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.made {
+    padding: 35px 0;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
 }
