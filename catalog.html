@@ -9,8 +9,6 @@
 </head>
 <body>
 
-<!--Верхняя шапка сайта-->
-
 <header class="main-header">
     <div class="container">
         <div class="name"><h1>Техномарт</h1></div>
@@ -22,8 +20,6 @@
        </div>
     </header>
     
-   <!--Блок описания магазина, адрес и телефон, имя + мои заказы, имя пользователя, навигация-->
-
   <header class="second-header">
    <div class="container">
        <section class="second-header-description">
@@ -72,9 +68,6 @@
    </div>
 </header>
 
-<!--Основное содержание страницы-->
-<!--Хлебные крошки-->
-
 <main class="container clearfix">
     
     <div class="breadcrumbs">
@@ -103,18 +96,14 @@
         </ul>
     </div>
     
-<!--Блок "Перфораторы"-->
-   
       <h2 class="perforator">Перфораторы</h2>
 
-<!--Левая колонка, оформление + фильтры -->
         
         <div class="left-column">
-        <h3 class="filter">Фильтр</h2>
+        <h3 class="filter">Фильтр</h3>
         <div class="filter-sorting">
         <h3>Цена:</h3>
 
-<!--Форма фильтр слева, Контроллер, чекбоксы и радиобатон-->
               
         <form action="https://echo.htmlacademy.ru" method="GET">
         <div class="range-filter">
@@ -131,12 +120,6 @@
             <label class="max-price"><input name="max-price" type="text" value="30000"></label>
         </div>
         </div>
-<!--        <input type="text" name="min-price">0</input>-->
-<!--
-        <input>-</input>
-        <input type="text" name="max-price">30000</input>
-        <hr>
--->
             <hr>
             <h3 class="filters">Производители</h3>
             
@@ -146,11 +129,11 @@
                 <label for="ch2">Интерскол</label><br>
                 <input type="checkbox" id="ch3" checked>
                 <label for="ch3">Makkita</label><br>
-                <input type="checkbox" id="ch4">
+                <input type="checkbox" id="ch4" disabled>
                 <label for="ch4">DeWalt</label><br>
                 <input type="checkbox" id="ch5">
                 <label for="ch5">Hitachi</label><br>
-        </div>
+        
         <hr>
         <div class="filters">
             <h3 class="filters">Питание</h3>
@@ -162,8 +145,6 @@
         </div>
 </div>
     
-<!--Правая колонка, фильтры сверху-->
-
   <div class="right-column">
 
    <ul class="top-sorting">
@@ -175,8 +156,6 @@
             <li> <span class="icon-down-dir ready-down"></span></li>
         </ul>
 
-<!--Блок каталога товаров 9шт.-->
-         
    <div class="catalog-items clearfix">
       
     <article class="catalog-item">
@@ -333,7 +312,7 @@
     </article>
     
     
-<!--
+<!-- оставил для сравнения верстки карточки товаров! это старый вариант
     <article class="items-list">
         <a href="#"><img src="img/catalog_foto_items_list_1.jpg" alt="text"></a>
             <span class="title">Перфоратор BOSCH <br>BFG 2000</span><br>
@@ -345,8 +324,6 @@
     </div>
 </main>
     
-<!--Переход по номеру страницы, пагинация-->
-     
       <div class="container">
            <ul class="pagination">
             <li>
@@ -364,8 +341,6 @@
         </ul>
         </div>
    
-<!--Блок "Пара слов о перфораторах-->
-           
     <div class="about-perforators">
        <div class="container">
         <h2 class="about-perforators">Пара слов о перфораторах</h2>
@@ -374,9 +349,6 @@
         ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </div>
     </div>                
-
-
-<!--Основной футер-->
 
     <footer class="main-footer clearfix">
         <div class="container">
@@ -414,8 +386,6 @@
             </div>
     </footer>
 
-<!--Нижний футер-->
-
     <footer class="last-footer clearfix">
         <div class="container">
             <section class="last-footer-rights">
@@ -438,26 +408,10 @@
         </div>
     </footer>
     
-<!--Модальное окно-->
-    
      <div class="modal-content" id="incard">
         <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
         <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
         <div class="modal-contacts">
-            
-<!--
-            <div class="modal-content-contacts"><label><h3 class="modal-name">Ваше имя:</h3><br>
-                <input class="user-info left" type="text" name="email" placeholder="Представьтесь, пожалуйста"></label></div>
-            
-            <div class="modal-content-contacts"><label><h3 class="modal-name left">Ваш e-mail:</h3><br>
-                <input class="user-info right" type="text" name="email" placeholder="Для отправки ответа"></label></div>
-        </div>
-         <div class="letter-text">
-             <label><h3 class="modal-name left">Текст письма:</h3><br>
-             <textarea name="user-letter" cols="70" rows="6" placeholder="Для отправки ответа"></textarea></label>
-         </div>
--->
-   
          <div class="ok-image"></div>
          <div class="ok-text"><b>Товар добавлен в корзину!</b></div>
                      
@@ -467,8 +421,9 @@
              <button class="btn-escape" type="submit">Продолжить покупки</button>
              </div>
          </div>
+         </div>
     </form>
-</div>
+ </div>
     <script src="js/catalog.js"></script>
 </body>
 </html>
