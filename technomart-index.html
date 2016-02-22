@@ -74,7 +74,7 @@
 <!--Каталог-->
 
 <main class="container">
-    <div class="all-benefits">
+    <div class="all-benefits clearfix">
     <section class="benefits materials">
         <b>Материалы</b>
         <div class="btn-benefits"><a href="#">На любой вкус</a></div>
@@ -115,7 +115,7 @@
         <div class="slide">
            <div class="slide-text">
                <div class="slide-title"><h3>Дрели</h3>
-               <p>Настоящие мужские игрушки</p>
+               <p>Соседям на радость!</p>
                <a class="btn-slide" href="#">Открыть каталог</a>
                </div>
            </div>
@@ -138,10 +138,18 @@
 <!--Блок и кнопка "Популярные товары"-->
    
        <div class="bord">
+         <h3>Популярные товары:</h3>
+          <a class="btn-popular" href="#">Все популярные товары</a>
+       
+<!--
+<!--
           <ul class="populars">
-           <li class="populars-items">Популярные товары</li>
+           <li class="populars-items">Популярные товары:</li>
            <li class="btn-popular-items"><a href="#">Все популярные товары</a></li>
        </ul>
+-->
+
+
        </div>
             
 <!--4 блока популярных товаров-->
@@ -222,12 +230,10 @@
     
 <!--Популярные производители + кнопка-->
     
-    <div class="bord">
-          <ul class="populars">
-           <li class="populars-brands">Популярные производители</li>
-           <li class="btn-popular-items"><a href="#">Все производители</a></li>
-       </ul>
-       </div>
+    <div class="bord manuf">
+         <h3>Популярные производители:</h3>
+          <a class="btn-popular bottom" href="#">Все производители</a>
+    </div>
     
 <!--Логотипы брендов-->
   
@@ -289,9 +295,9 @@
    <div class="container">
    <section class="about">
        <h3 class="company">Компания Техномарт</h3>
-       <p>Настоящий мужской шоппинг начинается здесь! Огромный         выбор товара для ремонта и<br>
+       <p class="first">Настоящий мужской шоппинг начинается здесь! Огромный         выбор товара для ремонта и
            строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки      России!
+        <p class="sec">Мы можем доставить ваш товар в самые отдаленные точки      России!
             Техномарт работает со многими транспортными компаниями:</p>
             <ul class="delivery-company">
                 <li>
@@ -309,9 +315,9 @@
    
    <section class="contacts">    
         <h3 class="company">Контакты</h3>
-        <p>Вы можете забрать товар сами,<br>
+        <p class="third">Вы можете забрать товар сами,<br>
             заехав в наш офис</p>
-        <img src="img/map.png" alt="text"><br>
+        <a class="open-map" href="#"><img src="img/map.png" alt="text"></a><br>
         <a class="btn-write-us" href="#">Заблудились? Напишите нам!</a>
         </section>
         </div>
@@ -378,7 +384,8 @@
             </section>
         </div>
     </footer>
-    <div class="modal-content">
+    
+    <div class="modal-content" id="window">
         <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
         <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
         <div class="modal-contacts">
@@ -401,7 +408,13 @@
              </div>
          </div>
     </form>
+    
 </div>
+<div class="modal-content" id="map">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="100%" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    </div>
 <script src="js/scripts.js"></script>
 </body>
 </html>
