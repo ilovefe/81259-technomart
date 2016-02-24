@@ -1,92 +1,243 @@
 body {
     min-width: 960px;
-/*    margin: auto;*/
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    margin: auto;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     color: #000;
 }
 
 @charset "UTF-8";
-
- @font-face {
-  font-family: 'symbols-technomart';
-  src: url('../font/symbols-technomart.eot?22619757');
-  src: url('../font/symbols-technomart.eot?22619757#iefix') format('embedded-opentype'),
-       url('../font/symbols-technomart.woff?22619757') format('woff'),
-       url('../font/symbols-technomart.ttf?22619757') format('truetype'),
-       url('../font/symbols-technomart.svg?22619757#symbols-technomart') format('svg');
-  font-weight: normal;
-  font-style: normal;
+@font-face {
+    font-family: "symbols-technomart";
+    src: url("../font/symbols-technomart.eot?22619757");
+    src: url("../font/symbols-technomart.eot?22619757#iefix") format("embedded-opentype"), url("../font/symbols-technomart.woff?22619757") format("woff"), url("../font/symbols-technomart.ttf?22619757") format("truetype"), url("../font/symbols-technomart.svg?22619757#symbols-technomart") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
+
+
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+
+
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+
+
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
-    font-family: 'symbols-technomart';
-    src: url('../font/symbols-technomart.svg?22619757#symbols-technomart') format('svg');
+    font-family: "symbols-technomart";
+    src: url("../font/symbols-technomart.svg?22619757#symbols-technomart") format("svg");
   }
 }
 */
- 
- [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "symbols-technomart";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
- 
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
- 
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-     
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
- 
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
- 
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
- 
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
- 
-.icon-left:before { content: '\3c'; } /* '&lt;' */
-.icon-right:before { content: '\3e'; } /* '&gt;' */
-.icon-basket:before { content: '\62'; } /* 'b' */
-.icon-facebook:before { content: '\66'; } /* 'f' */
-.icon-twitter:before { content: '\74'; } /* 't' */
-.icon-vk:before { content: '\76'; } /* 'v' */
-.icon-up:before { content: '\2c4'; } /* '˄' */
-.icon-down:before { content: '\2c5'; } /* '˅' */
-.icon-left-big:before { content: '\2190'; } /* '←' */
-.icon-right-big:before { content: '\2192'; } /* '→' */
-.icon-login:before { content: '\2386'; } /* '⎆' */
-.icon-logout:before { content: '\241b'; } /* '␛' */
-.icon-up-dir:before { content: '\25b2'; } /* '▲' */
-.icon-down-dir:before { content: '\25bc'; } /* '▼' */
-.icon-circle:before { content: '\25cb'; } /* '○' */
-.icon-circle-dot:before { content: '\25cf'; } /* '●' */
-.icon-star:before { content: '\2605'; } /* '★' */
-.icon-check-off:before { content: '\2610'; } /* '☐' */
-.icon-check-on:before { content: '\2611'; } /* '☑' */
-.icon-youtube:before { content: '\f39e'; } /* '' */
-.icon-home:before { content: '🏠'; } /* '\1f3e0' */
-.icon-user:before { content: '👨'; } /* '\1f468' */
-.icon-phone:before { content: '📞'; } /* '\1f4de' */
-.icon-instagramm:before { content: '📷'; } /* '\1f4f7' */
-.icon-search:before { content: '🔍'; } /* '\1f50d' */
-.icon-bookmark:before { content: '🔖'; } /* '\1f516' */
 
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "symbols-technomart";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-left:before {
+    content: "\3c";
+}
+
+
+/* "&lt;" */
+
+.icon-right:before {
+    content: "\3e";
+}
+
+
+/* "&gt;" */
+
+.icon-basket:before {
+    content: "\62";
+}
+
+
+/* "b" */
+
+.icon-facebook:before {
+    content: "\66";
+}
+
+
+/* "f" */
+
+.icon-twitter:before {
+    content: "\74";
+}
+
+
+/* "t" */
+
+.icon-vk:before {
+    content: "\76";
+}
+
+
+/* "v" */
+
+.icon-up:before {
+    content: "\2c4";
+}
+
+
+/* "˄" */
+
+.icon-down:before {
+    content: "\2c5";
+}
+
+
+/* "˅" */
+
+.icon-left-big:before {
+    content: "\2190";
+}
+
+
+/* "←" */
+
+.icon-right-big:before {
+    content: "\2192";
+}
+
+
+/* "→" */
+
+.icon-login:before {
+    content: "\2386";
+}
+
+
+/* "⎆" */
+
+.icon-logout:before {
+    content: "\241b";
+}
+
+
+/* "␛" */
+
+.icon-up-dir:before {
+    content: "\25b2";
+}
+
+
+/* "▲" */
+
+.icon-down-dir:before {
+    content: "\25bc";
+}
+
+
+/* "▼" */
+
+.icon-circle:before {
+    content: "\25cb";
+}
+
+
+/* "○" */
+
+.icon-circle-dot:before {
+    content: "\25cf";
+}
+
+
+/* "●" */
+
+.icon-star:before {
+    content: "\2605";
+}
+
+
+/* "★" */
+
+.icon-check-off:before {
+    content: "\2610";
+}
+
+
+/* "☐" */
+
+.icon-check-on:before {
+    content: "\2611";
+}
+
+
+/* "☑" */
+
+.icon-youtube:before {
+    content: "\f39e";
+}
+
+
+/* "" */
+
+.icon-home:before {
+    content: "🏠";
+}
+
+
+/* "\1f3e0" */
+
+.icon-user:before {
+    content: "👨";
+}
+
+
+/* "\1f468" */
+
+.icon-phone:before {
+    content: "📞";
+}
+
+
+/* "\1f4de" */
+
+.icon-instagramm:before {
+    content: "📷";
+}
+
+
+/* "\1f4f7" */
+
+.icon-search:before {
+    content: "🔍";
+}
+
+
+/* "\1f50d" */
+
+.icon-bookmark:before {
+    content: "🔖";
+}
+
+
+/* "\1f516" */
 
 .sprite {
     background-image: url("../img/sprite.png");
@@ -195,11 +346,9 @@ h1 {
     font-size: 24px;
     line-height: 24px;
     font-weight: bolder;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-transform: uppercase;
-    
     color: #ffffff;
-    
 }
 
 h2 {
@@ -207,9 +356,8 @@ h2 {
     font-size: 30px;
     line-height: 30px;
     font-weight: bold;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-transform: uppercase;
-    
     color: #32425c;
 }
 
@@ -217,9 +365,8 @@ h2.slider {
     font-size: 36px;
     line-height: 30px;
     font-weight: bold;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-transform: uppercase;
-        
     color: #ffffff;
 }
 
@@ -227,9 +374,8 @@ h2.slider {
     font-size: 30px;
     line-height: 30px;
     font-weight: bold;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-transform: uppercase;
-    
     color: #ffffff;
 }
 
@@ -241,7 +387,7 @@ h2.slider {
 
 .container {
     margin: 0 auto;
-    padding: 0 10px;
+/*    padding: 0 10px;*/
     width: 940px;
 }
 
@@ -252,9 +398,8 @@ h2.slider {
     font-size: 24px;
     line-height: 24px;
     font-weight: bold;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-align: center;
-    
     background: #ee3643;
     box-shadow: 0 5px 0 0 #b52933;
 }
@@ -281,7 +426,8 @@ h2.slider {
     background-repeat: no-repeat;
 }
 
-.top-search:focus, .top-search:hover:focus {
+.top-search:focus,
+.top-search:hover:focus {
     background-position: 7px -508px;
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
@@ -292,7 +438,6 @@ input[type="text"] {
     height: 35px;
     width: 200px;
     vertical-align: baseline;
-
     background-color: #293449;
     border: none;
 }
@@ -307,7 +452,6 @@ input.top-search:hover {
 
 input[type="text"]:focus {
     outline: none;
-    
     background-color: #ffffff;
     color: #000000;
 }
@@ -319,12 +463,14 @@ input[type="text"]:focus {
     font-size: 17px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
-        
+    font-family: "Cuprum", "Arial", sans-serif;
     color: #fff;
 }
 
-.bookmarks, .basket, .basket-active, .checkout {
+.bookmarks,
+.basket,
+.basket-active,
+.checkout {
     display: inline-block;
 }
 
@@ -335,8 +481,7 @@ input[type="text"]:focus {
     font-size: 17px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
-    
+    font-family: "Cuprum", "Arial", sans-serif;
     color: #fff;
 }
 
@@ -355,7 +500,6 @@ input[type="text"]:focus {
     left: 25px;
     width: 22px;
     height: 21px;
-    
     background-position: -3px -43px;
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
@@ -382,10 +526,9 @@ input[type="text"]:focus {
     font-size: 17px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-align: center;
     box-sizing: border-box;
-    
     color: #fff;
 }
 
@@ -435,9 +578,8 @@ input[type="text"]:focus {
     font-size: 17px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-align: center;
-    
     color: #fff;
     background: #63a63e;
 }
@@ -459,7 +601,10 @@ input[type="text"]:focus {
     background: #f2f6f8;
 }
 
-.second-header-description, .second-header-contact, .second-header-user-block, .second-header-user-name {
+.second-header-description,
+.second-header-contact,
+.second-header-user-block,
+.second-header-user-name {
     float: left;
 }
 
@@ -472,9 +617,8 @@ input[type="text"]:focus {
     font-size: 16px;
     line-height: 23px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: italic;
-    
     color: #ee3643;
 }
 
@@ -489,9 +633,8 @@ input[type="text"]:focus {
     font-size: 21px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     border: 2px solid white;
-    
     color: #ee3643;
 }
 
@@ -514,8 +657,7 @@ input[type="text"]:focus {
     font-size: 14px;
     line-height: 24px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
-    
+    font-family: "Cuprum", "Arial", sans-serif;
     color: #32425c;
 }
 
@@ -523,7 +665,8 @@ input[type="text"]:focus {
     margin: 46px 0 47px 27px;
 }
 
-.enter, .registration {
+.enter,
+.registration {
     display: inline-block;
 }
 
@@ -531,18 +674,15 @@ input[type="text"]:focus {
     font-size: 21px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-decoration: none;
-    
     color: #000000;
 }
 
 .enter {
     position: relative;
     padding: 13px 25px 13px 47px;
-    
     background: #fff;
-    
 }
 
 .enter a:hover {
@@ -554,17 +694,16 @@ input[type="text"]:focus {
 }
 
 .enter::before {
-  content: "";
-  position: absolute;
-  top: 14px;
-  left: 15px;
-  width: 18px;
-  height: 18px;
-    
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position: -12px -333px;
-  opacity: 0.3;
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -12px -333px;
+    opacity: 0.3;
 }
 
 .enter:hover::before {
@@ -578,8 +717,7 @@ input[type="text"]:focus {
 .registration {
     margin-left: 5px;
     padding: 13px 25px 13px 25px;
-    
-    background: #fff;    
+    background: #fff;
 }
 
 .registration a:hover {
@@ -602,9 +740,8 @@ input[type="text"]:focus {
     font-size: 21px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     box-sizing: border-box;
-    
     background: #fff;
     color: #000;
 }
@@ -613,7 +750,6 @@ input[type="text"]:focus {
     font-size: 21px;
     line-height: 18px;
     text-decoration: none;
-    
     color: #000;
 }
 
@@ -624,8 +760,6 @@ input[type="text"]:focus {
     height: 23px;
     top: 12px;
     left: 18px;
-    
-    
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     background-position: -11px -557px;
@@ -647,7 +781,6 @@ input[type="text"]:focus {
     height: 23px;
     top: 13px;
     right: 6px;
-    
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     background-position: -10px -370px;
@@ -666,14 +799,14 @@ input[type="text"]:focus {
     color: #b2b2b2;
 }
 
-.my-orders a, .my-office a {
+.my-orders a,
+.my-office a {
     margin-left: 11px;
     padding: 5px 13px 0 10px;
     font-size: 16px;
     line-height: 18px;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-decoration: underline;
-        
     color: #32425c;
 }
 
@@ -681,11 +814,13 @@ input[type="text"]:focus {
     padding: 5px 13px 0 10px;
 }
 
-.my-orders a:hover, .my-office a:hover {
+.my-orders a:hover,
+.my-office a:hover {
     color: red;
 }
 
-.my-orders a:active, .my-office a:active {
+.my-orders a:active,
+.my-office a:active {
     color: #b7bfc8;
 }
 
@@ -698,21 +833,18 @@ input[type="text"]:focus {
     vertical-align: middle;
     text-align: center;
     border-radius: 50%;
-    
     background: #212a3a;
     color: #fff;
 }
-    
+
 .main-navigation {
     clear: both;
 }
 
 .main-navigation {
     margin-bottom: 65px;
-    margin-left: -11px;
     text-align: center;
     box-shadow: 0 5px 0 0 #293449;
-    
     background: #32425c;
 }
 
@@ -723,20 +855,19 @@ input[type="text"]:focus {
     list-style: none;
 }
 
-.main-navigation li{
+.main-navigation li {
     display: inline-block;
     vertical-align: top;
     font-size: 17px;
     line-height: 17px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .main-navigation a {
     display: block;
     padding: 20px 30px;
     text-decoration: none;
-    
     color: #fff;
 }
 
@@ -749,7 +880,7 @@ input[type="text"]:focus {
 }
 
 .clearfix:after {
-    content: '';
+    content: "";
     display: table;
     clear: both;
 }
@@ -761,7 +892,6 @@ input[type="text"]:focus {
     min-height: 123px;
     margin: 56px 20px 20px 0;
     padding-right: 60px;
-    
     color: #fff;
 }
 
@@ -787,13 +917,12 @@ input[type="text"]:focus {
     background: #f6b22d;
 }
 
-.materials::before {    
+.materials::before {
     position: absolute;
     width: 45px;
     height: 66px;
     bottom: 27px;
     right: 43px;
-    
     background-image: url("../img/benefits_logo1.png");
     background-repeat: no-repeat;
 }
@@ -805,7 +934,6 @@ input[type="text"]:focus {
     height: 60px;
     top: 0;
     right: 0;
-    
     background-image: url("../img/new%20flag.png");
     background-repeat: no-repeat;
 }
@@ -814,13 +942,12 @@ input[type="text"]:focus {
     background: #4aafde;
 }
 
-.instrument::before {    
+.instrument::before {
     position: absolute;
     width: 80px;
     height: 66px;
     bottom: 24px;
     right: 23px;
-    
     background-image: url("../img/benefits_logo2.png");
     background-repeat: no-repeat;
 }
@@ -829,13 +956,12 @@ input[type="text"]:focus {
     background: #cc79d1;
 }
 
-.tech::before {    
+.tech::before {
     position: absolute;
     width: 80px;
     height: 66px;
     bottom: 25px;
     right: 30px;
-    
     background-image: url("../img/benefits_logo3.png");
     background-repeat: no-repeat;
 }
@@ -844,13 +970,12 @@ input[type="text"]:focus {
     background: #85d179;
 }
 
-.goods::before {    
+.goods::before {
     position: absolute;
     width: 60px;
     height: 75px;
     bottom: 22px;
     right: 45px;
-    
     background-image: url("../img/benefits_logo4.png");
     background-repeat: no-repeat;
 }
@@ -860,13 +985,12 @@ input[type="text"]:focus {
     background: #f6b22d;
 }
 
-.supply::before {    
+.supply::before {
     position: absolute;
     width: 80px;
     height: 65px;
     bottom: 26px;
     right: 30px;
-    
     background-image: url("../img/benefits_logo5.png");
     background-repeat: no-repeat;
 }
@@ -879,10 +1003,9 @@ input[type="text"]:focus {
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-align: center;
     border-radius: 3px;
-    
     background: rgba(0, 0, 0, 0.1);
 }
 
@@ -891,7 +1014,6 @@ input[type="text"]:focus {
     padding: 10px 5px 10px 10px;
     text-decoration: none;
     text-transform: uppercase;
-    
     color: #fff;
 }
 
@@ -912,8 +1034,7 @@ input[type="text"]:focus {
     font-size: 24px;
     line-height: 30px;
     font-weight: bold;
-    font-family: 'Cuprum', 'Arial', sans-serif;
-    
+    font-family: "Cuprum", "Arial", sans-serif;
     color: #fff;
 }
 
@@ -937,7 +1058,6 @@ input[type="text"]:focus {
     position: absolute;
     bottom: 11%;
     left: 48%;
-    
     width: 200px;
     margin-left: -100px;
     text-align: center;
@@ -952,16 +1072,11 @@ input[type="text"]:focus {
     border: 2px solid #fff;
     border-radius: 50%;
     cursor: pointer;
-    
-    background: #ee3643;
-}
-
-.slider-controls label checked {
-     background: #ee3643;
+    background: #fff;
 }
 
 .slide .btn-slide {
-    display: block;    
+    display: block;
     width: 195px;
     margin-top: 122px;
     margin-left: 25px;
@@ -969,12 +1084,11 @@ input[type="text"]:focus {
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
     text-transform: uppercase;
-    
     color: #fff;
     background: #ee3643;
 }
@@ -1000,11 +1114,17 @@ input[type="text"]:focus {
 }
 
 #btn-slide-1:checked ~ .slides .slide:nth-child(1) {
-  display: block;
+    display: block;
 }
 
 #btn-slide-2:checked ~ .slides .slide:nth-child(2) {
-  display: block;
+    display: block;
+}
+
+#btn-slide-1:checked ~ .slider-controls label[for="btn-slide-1"],
+#btn-slide-2:checked ~ .slider-controls label[for="btn-slide-2"] {
+    
+    background: #ee3643;
 }
 
 .slide-title h3 {
@@ -1012,9 +1132,8 @@ input[type="text"]:focus {
     font-size: 36px;
     line-height: 30px;
     font-weight: bold;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-transform: uppercase;
-    
     color: #fff;
 }
 
@@ -1023,31 +1142,28 @@ input[type="text"]:focus {
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
-    font-family: 'PT sans', 'Arial', sans-serif;
-        
+    font-family: "PT sans", "Arial", sans-serif;
     color: #fff;
 }
 
-.slider::before {    
+.slider::before {
     position: absolute;
     content: "";
     width: 25px;
     height: 45px;
     top: 43%;
     right: 6%;
-    
     background-image: url("../img/.icon-right.png");
     background-repeat: no-repeat;
 }
 
-.slider::after {    
+.slider::after {
     position: absolute;
     content: "";
     width: 25px;
     height: 45px;
     top: 43%;
     left: 4%;
-    
     background-image: url("../img/.icon-left.png");
     background-repeat: no-repeat;
 }
@@ -1055,7 +1171,6 @@ input[type="text"]:focus {
 .bord {
     margin: 30px 0 0 0;
     vertical-align: top;
-    
     background: #f7f3ec;
 }
 
@@ -1063,7 +1178,8 @@ input[type="text"]:focus {
     margin-top: 0;
 }
 
-.bord h3, .btn-popular {
+.bord h3,
+.btn-popular {
     display: inline-block;
     vertical-align: middle;
 }
@@ -1073,27 +1189,25 @@ input[type="text"]:focus {
     font-size: 30px;
     line-height: 30px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-transform: uppercase;
-    
-    color: #32425c;    
+    color: #32425c;
 }
 
 .btn-popular {
     float: right;
-/*    display: inline-block;*/
+    /*    display: inline-block;*/
     width: 253px;
     padding: 10px 0;
     margin: 25px 23px 25px 0;
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-align: center;
     border-radius: 3px;
     text-transform: uppercase;
     text-decoration: none;
-    
     color: #fff;
     background: #ee3643;
 }
@@ -1103,11 +1217,10 @@ input[type="text"]:focus {
 }
 
 .brand-logo {
-    float:left;
+    float: left;
     width: 220px;
     min-height: 145px;
     margin: 18px 17px 0 0;
-        
     border: 1px solid #e5e5e5;
 }
 
@@ -1135,7 +1248,7 @@ input[type="text"]:focus {
     font-size: 30px;
     line-height: 24px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-transform: uppercase;
 }
 
@@ -1144,10 +1257,11 @@ input[type="text"]:focus {
     font-size: 13px;
     line-height: 24px;
     font-weight: normal;
-    font-family: 'PT sans', 'Arial', sans-serif;    
+    font-family: "PT sans", "Arial", sans-serif;
 }
 
-.buttons-of-service, .buttons-result {
+.buttons-of-service,
+.buttons-result {
     position: relative;
     float: left;
     margin: 7px 0 100px 0;
@@ -1160,7 +1274,6 @@ input[type="text"]:focus {
     height: 272px;
     top: -40px;
     left: 231px;
-        
     background-image: url("../img/vert_line.png");
     background-repeat: no-repeat;
 }
@@ -1172,10 +1285,8 @@ input[type="text"]:focus {
     height: 240px;
     bottom: -78px;
     right: -620px;
-    
-    
     background-image: url("../img/track_and_shadow.png");
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
 }
 
 .btn-serv {
@@ -1186,11 +1297,10 @@ input[type="text"]:focus {
     font-size: 21px;
     line-height: 30px;
     font-weight: bold;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-align: left;
     outline: none;
     border: none;
-    
     color: #fff;
     background: #32425c;
 }
@@ -1217,56 +1327,52 @@ input[type="text"]:focus {
     font-size: 36px;
     line-height: 24px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-transform: uppercase;
-    
-    color: #32425c;    
+    color: #32425c;
 }
 
 .buttons-result > p {
     margin-top: 23px;
     font-size: 13px;
     line-height: 24px;
-    font-family: 'PT sans';
+    font-family: "PT sans" "Arial", sans-serif;
     font-weight: 600;
-    
     color: #000;
 }
 
 .delivery-company::before {
-  content: "";
-  position: absolute;
-  bottom: 33px;
-  left: -35px;
-
-  width: 25px;
-  height: 2px;
-  background-color: #fb565a;
+    content: "";
+    position: absolute;
+    bottom: 33px;
+    left: -35px;
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
 }
 
 .delivery-company::after {
-  content: "";
-  position: absolute;
-  bottom: 72px;
-  left: -35px;
-
-  width: 25px;
-  height: 2px;
-  background-color: #fb565a;
+    content: "";
+    position: absolute;
+    bottom: 72px;
+    left: -35px;
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
 }
 
 .about::before {
-  content: "";
-  position: absolute;
-  bottom: 236px;
-  left: -1px;
-
-  width: 25px;
-  height: 2px;
-  background-color: #fb565a;
+    content: "";
+    position: absolute;
+    bottom: 236px;
+    left: -1px;
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
 }
 
-.about, .contacts {
+.about,
+.contacts {
     float: left;
 }
 
@@ -1285,7 +1391,7 @@ input[type="text"]:focus {
     font-size: 30px;
     line-height: 24px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-transform: uppercase;
 }
 
@@ -1294,8 +1400,7 @@ input[type="text"]:focus {
     font-size: 13px;
     line-height: 24px;
     font-weight: normal;
-    font-family: 'PT sans', 'Arial', sans-serif;
-    
+    font-family: "PT sans", "Arial", sans-serif;
     color: #000;
 }
 
@@ -1304,9 +1409,8 @@ input[type="text"]:focus {
     font-size: 13px;
     line-height: 24px;
     font-weight: normal;
-    font-family: 'PT sans', 'Arial', sans-serif;
+    font-family: "PT sans", "Arial", sans-serif;
     white-space: pre-line;
-    
     color: #000;
 }
 
@@ -1315,8 +1419,7 @@ input[type="text"]:focus {
     font-size: 13px;
     line-height: 24px;
     font-weight: normal;
-    font-family: 'PT sans', 'Arial', sans-serif;
-    
+    font-family: "PT sans", "Arial", sans-serif;
     color: #000;
 }
 
@@ -1340,12 +1443,11 @@ input[type="text"]:focus {
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-align: center;
     text-decoration: none;
     border-radius: 3px;
     text-transform: uppercase;
-    
     color: #fff;
     background: #ee3643;
 }
@@ -1360,7 +1462,7 @@ input[type="text"]:focus {
     font-size: 13px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'PT sans', 'Arial', sans-serif;
+    font-family: "PT sans", "Arial", sans-serif;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -1370,10 +1472,10 @@ input[type="text"]:focus {
     color: #000;
 }
 
-.icon-home, .icon-right {
+.icon-home,
+.icon-right {
     font-size: 16px;
     line-height: 20px;
-    
     color: #c1c6ce;
 }
 
@@ -1384,10 +1486,9 @@ input[type="text"]:focus {
     font-size: 30px;
     line-height: 30px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     background: #f2f6f8;
 }
-
 
 input[type="checkbox"] {
     display: none;
@@ -1404,7 +1505,7 @@ input[type="checkbox"] + label {
     padding-left: 34px;
     font-size: 15px;
     line-height: 20px;
-    font-family: 'PT sans', 'Arial', sans-serif;
+    font-family: "PT sans", "Arial", sans-serif;
     cursor: pointer;
     text-transform: uppercase;
 }
@@ -1416,13 +1517,13 @@ input[type="radio"] + label {
     padding-left: 33px;
     font-size: 14px;
     line-height: 20px;
-    font-family: 'PT sans', 'Arial', sans-serif;
+    font-family: "PT sans", "Arial", sans-serif;
     cursor: pointer;
     text-transform: uppercase;
 }
 
 input[type="checkbox"] + label::before {
-    content: '\2610';
+    content: "\2610";
     position: absolute;
     top: 0;
     left: 0;
@@ -1431,26 +1532,24 @@ input[type="checkbox"] + label::before {
     font-size: 28px;
     line-height: 20px;
     font-family: "symbols-technomart";
-    
     color: #c1c1c1;
 }
 
 input[type="radio"] + label::before {
-    content: '\25cb';
+    content: "\25cb";
     position: absolute;
     top: 0;
     left: 0;
     width: 10px;
     height: 10px;
     font-size: 28px;
-    line-height: 20px;    
+    line-height: 20px;
     font-family: "symbols-technomart";
-    
     color: #c1c1c1;
 }
 
 input[type="checkbox"]:checked + label::before {
-    content: '\2611';
+    content: "\2611";
 }
 
 input[type="checkbox"]:checked + label:hover::before {
@@ -1466,7 +1565,7 @@ input[type="checkbox"] + label:hover::before {
 }
 
 input[type="radio"]:checked + label::before {
-    content: '\25cf';
+    content: "\25cf";
 }
 
 input[type="radio"]:checked + label:hover::before {
@@ -1488,9 +1587,8 @@ h3.filter {
     font-size: 13px;
     line-height: 18px;
     font-weight: 600;
-    font-family: 'PT sans', 'Arial', sans-serif;
+    font-family: "PT sans", "Arial", sans-serif;
     text-transform: uppercase;
-    
     background: #f7f3ec;
 }
 
@@ -1499,7 +1597,7 @@ h3.filter {
     font-size: 17px;
     line-height: 30px;
     font-weight: bold;
-    font-family: 'PT sans', 'Arial', sans-serif;
+    font-family: "PT sans", "Arial", sans-serif;
     text-transform: uppercase;
 }
 
@@ -1508,7 +1606,7 @@ h3.filters {
     font-size: 17px;
     line-height: 30px;
     font-weight: bold;
-    font-family: 'PT sans', 'Arial', sans-serif;
+    font-family: "PT sans", "Arial", sans-serif;
     text-transform: uppercase;
 }
 
@@ -1525,12 +1623,11 @@ hr {
     padding: 10px 38px;
     font-size: 13px;
     line-height: 18px;
-    font-family: 'PT sans', 'Arial', sans-serif;
+    font-family: "PT sans", "Arial", sans-serif;
     text-transform: uppercase;
     border: 1px solid #e5e5e5;
     border-radius: 3px;
     outline: none;
-    
     background: #fff;
 }
 
@@ -1551,7 +1648,6 @@ hr {
     padding: 43px 20px 0 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    
     background: #f7f3ec;
 }
 
@@ -1563,7 +1659,6 @@ hr {
 .range-controls .bar {
     width: 85%;
     height: 2px;
-    
     background: #00ca74;
 }
 
@@ -1599,9 +1694,8 @@ hr {
 }
 
 .max-price {
-  text-align: right;
+    text-align: right;
 }
-
 
 .price-controls input {
     width: 95px;
@@ -1609,19 +1703,18 @@ hr {
     font-size: 17px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'PT Sans', 'Arial', sans-serif;
-    text-align: center;    
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-align: center;
     border-radius: 5px;
     border: none;
     border-radius: 5px;
     outline: none;
-
     background: #f7f3ec;
     color: #000;
-
 }
 
-.left-column, .right-column {
+.left-column,
+.right-column {
     float: left;
 }
 
@@ -1629,28 +1722,29 @@ hr {
     font-size: 0;
 }
 
+
 /* оставил для сравнения старый вариант sorting список ul
 .top-sorting li {
     display: inline-block;
     padding: 12px 19px 12px 0;
     font-size: 13px;
     line-height: 18px;
-    font-family: 'PT sans', 'Arial', sans-serif;
+    font-family: "PT sans", "Arial", sans-serif;
     text-transform: uppercase;
     
     background: #f7f3ec;
 }
 */
 
-h3.sorting, .top-sorting {
+h3.sorting,
+.top-sorting {
     display: inline-block;
     margin: 0;
     padding: 10px 23px 11px 0;
     font-size: 13px;
     line-height: 18px;
-    font-family: 'PT sans', 'Arial', sans-serif;
+    font-family: "PT sans", "Arial", sans-serif;
     text-transform: uppercase;
-    
     background: #f7f3ec;
 }
 
@@ -1663,7 +1757,6 @@ a.by-price {
     margin-right: 60px;
     text-decoration: none;
     border-bottom: 1px dashed red;
-    
     color: #acaaa5;
 }
 
@@ -1671,7 +1764,6 @@ a.by-type {
     margin: 0 39px 0 5px;
     text-decoration: none;
     border-bottom: 1px dashed red;
-    
     color: #acaaa5;
 }
 
@@ -1679,7 +1771,6 @@ a.by-function {
     margin: 0 12px 0 22px;
     text-decoration: none;
     border-bottom: 1px dashed red;
-    
     color: #acaaa5;
 }
 
@@ -1698,7 +1789,6 @@ a.by-function:hover {
     line-height: 20px;
     text-align: center;
     vertical-align: bottom;
-    
     color: #c6c2bd;
 }
 
@@ -1710,7 +1800,6 @@ a.by-function:hover {
     font-size: 23px;
     line-height: 20px;
     vertical-align: bottom;
-    
     color: #c6c2bd;
 }
 
@@ -1727,7 +1816,6 @@ a.by-function:hover {
     margin-top: 18px;
     font-size: 0;
     width: 700px;
-    
 }
 
 .catalog-items-main {
@@ -1765,18 +1853,16 @@ a.by-function:hover {
     margin-right: 20px;
 }
 
-
 .new:before {
     position: absolute;
     top: -1px;
     right: -1px;
     width: 60px;
     height: 60px;
-    content: '';
+    content: "";
     background: url("../img/new%20flag.png") no-repeat 0 0;
     z-index: 10;
 }
-
 
 .catalog-item .actions {
     position: absolute;
@@ -1785,8 +1871,7 @@ a.by-function:hover {
     width: 218px;
     height: 88px;
     padding: 40px 0;
-    
-    background-color: #fff; 
+    background-color: #fff;
 }
 
 .actions .buy:hover {
@@ -1803,15 +1888,13 @@ a.by-function:hover {
     width: 135px;
     margin: 0 auto 7px;
     padding: 10px 0;
-    
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 3px;
-    
     color: #fff;
     background-color: #63a63e;
 }
@@ -1825,7 +1908,6 @@ a.by-function:hover {
     padding: 7px 0;
     color: #404f67;
     border: 3px solid #63a63e;
-    
     background-color: #fff;
 }
 
@@ -1839,7 +1921,7 @@ a.by-function:hover {
 }
 
 .catalog-item .actions {
-  display: none;
+    display: none;
 }
 
 .catalog-item:hover .actions {
@@ -1862,20 +1944,18 @@ h1.title {
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
-    font-family: 'PT sans', 'Arial', sans-serif;
+    font-family: "PT sans", "Arial", sans-serif;
     text-transform: none;
-    
     color: #000;
 }
 
 .discount {
-/*    margin: 10px 0 6px 3px;*/
+    /*    margin: 10px 0 6px 3px;*/
     font-size: 17px;
     line-height: 18px;
     font-weight: bold;
-    font-family: 'PT sans', 'Arial', sans-serif;
+    font-family: "PT sans", "Arial", sans-serif;
     text-decoration: line-through;
-    
     color: #999;
 }
 
@@ -1887,9 +1967,8 @@ h1.title {
     font-size: 17px;
     line-height: 18px;
     font-weight: bold;
-    font-family: 'PT sans', 'Arial', sans-serif;
+    font-family: "PT sans", "Arial", sans-serif;
     border-radius: 3px;
-    
     color: #fff;
     background: #ee3643;
 }
@@ -1900,11 +1979,10 @@ h1.title {
     right: -20px;
     width: 0;
     height: 0;
-    content: '';
+    content: "";
     border: 20px solid #fff;
     border-width: 21px solid #fff;
     border-left-color: #ee3643;
-
 }
 
 .items-list {
@@ -1919,6 +1997,7 @@ h1.title {
     margin-right: 0;
 }
 
+
 /* Оставил для сравнения с пред версией
 .items-list .title {
     font-size: 18px;
@@ -1927,11 +2006,13 @@ h1.title {
 }
 */
 
+
 /*
 .items-list .discount {
     text-decoration: line-through;
 }
 */
+
 
 /*
 .items-list .price {
@@ -1942,7 +2023,7 @@ h1.title {
 }
 */
 
-.pagination li{    
+.pagination li {
     display: inline-block;
 }
 
@@ -1952,12 +2033,11 @@ h1.title {
     font-size: 13px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'PT sans', 'Arial', sans-serif;
+    font-family: "PT sans", "Arial", sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     border: 1px solid #e5e5e5;
     border-radius: 3px;
-    
     color: #000;
 }
 
@@ -1977,7 +2057,6 @@ a.next {
 .pagination a.selected {
     border: 1px solid #ee3643;
     border-radius: 3px;
-    
     color: #fff;
     background: #ee3643;
 }
@@ -1999,8 +2078,7 @@ h2.about-perforators {
     font-size: 30px;
     line-height: 24px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
-
+    font-family: "Cuprum", "Arial", sans-serif;
     color: #000;
 }
 
@@ -2009,7 +2087,7 @@ p.perforator-description {
     padding-bottom: 46px;
     font-size: 13px;
     line-height: 24px;
-    font-family: 'PT sans', 'Arial', sans-serif;
+    font-family: "PT sans", "Arial", sans-serif;
 }
 
 .main-footer {
@@ -2017,7 +2095,8 @@ p.perforator-description {
     background: #32425c;
 }
 
-h2.company-footer, .nav-in-main-footer {
+h2.company-footer,
+.nav-in-main-footer {
     float: left;
 }
 
@@ -2028,20 +2107,20 @@ h2.company-footer {
     font-size: 30px;
     line-height: 30px;
     font-weight: bold;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-align: center;
     box-shadow: 0 5px 0 0 #b52933;
-    
     background: #ee3643;
 }
 
-.nav-in-main-footer li, .nav-in-main-footer-second li {
+.nav-in-main-footer li,
+.nav-in-main-footer-second li {
     display: inline-block;
     padding: 36px 56px 0 0;
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .nav-in-main-footer li:last-child,
@@ -2051,13 +2130,12 @@ h2.company-footer {
 
 .nav-in-main-footer {
     float: right;
-/*    margin-left: 164px;*/
+    /*    margin-left: 164px;*/
 }
 
 .nav-in-main-footer a {
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-decoration: none;
-    
     color: #f1f5f7;
 }
 
@@ -2072,7 +2150,7 @@ h2.company-footer {
 
 .nav-in-main-footer-second a {
     font-size: 18px;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-decoration: none;
     color: #ffd180;
 }
@@ -2091,10 +2169,9 @@ p.adress {
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     clear: both;
-    
-    color: #f1f5f7;    
+    color: #f1f5f7;
 }
 
 p.adress {
@@ -2110,7 +2187,10 @@ p.adress {
     background: #293449;
 }
 
-.last-footer-rights, .last-footer-social, .feedback, .made {
+.last-footer-rights,
+.last-footer-social,
+.feedback,
+.made {
     float: left;
 }
 
@@ -2119,8 +2199,7 @@ p.adress {
     font-size: 16px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
-    
+    font-family: "Cuprum", "Arial", sans-serif;
     color: #fff;
 }
 
@@ -2138,7 +2217,6 @@ p.adress {
     text-align: center;
     text-align: center;
     border-radius: 50%;
-    
     color: #fff;
     background: #212a3a;
 }
@@ -2161,12 +2239,12 @@ p.adress {
     font-size: 16px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
-    
+    font-family: "Cuprum", "Arial", sans-serif;
     color: #fff;
 }
 
-.feedback a, .made a {
+.feedback a,
+.made a {
     text-decoration: none;
     color: #f1c77c;
 }
@@ -2176,17 +2254,18 @@ p.adress {
     font-size: 16px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
-    
+    font-family: "Cuprum", "Arial", sans-serif;
     color: #ffffff;
 }
 
-.feedback a:hover, .made a:hover {
+.feedback a:hover,
+.made a:hover {
     text-decoration: underline;
     color: #f1c77c;
 }
 
-.feedback a:active, .made a:active {
+.feedback a:active,
+.made a:active {
     text-decoration: none;
     color: #e13643;
 }
@@ -2200,9 +2279,8 @@ p.adress {
     margin-left: -310px;
     padding: 50px 0 0 0;
     background: #fff;
-    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7),
-                inset 0 7px 0 0 #ee3643;
-    color: #000000;   
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7), inset 0 7px 0 0 #ee3643;
+    color: #000000;
     z-index: 10;
 }
 
@@ -2220,20 +2298,19 @@ p.adress {
     border: 0;
     outline: 0;
     cursor: pointer;
-    
     background-color: #fff;
 }
 
 .modal-content-close::before,
 .modal-content-close::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 2px;
-  width: 19px;
-  height: 3px;
-  background-color: #ee3643;
-  border-radius: 1px;
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 19px;
+    height: 3px;
+    background-color: #ee3643;
+    border-radius: 1px;
 }
 
 .modal-content-close::before {
@@ -2254,10 +2331,9 @@ input.user-info {
     padding: 1px 0 1px 15px;
     font-size: 13px;
     line-height: 18px;
-    font-family: 'PT sans', 'Arial', sans-serif;
+    font-family: "PT sans", "Arial", sans-serif;
     border: 1px solid #d7dcde;
     border-radius: 2px;
-    
     background: #fff;
 }
 
@@ -2292,7 +2368,6 @@ textarea {
     margin-top: 37px;
     padding-top: 15px;
     padding-bottom: 15px;
-    
     background: #f1f1f1;
 }
 
@@ -2303,7 +2378,7 @@ textarea {
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-align: center;
     border-radius: 3px;
     text-transform: uppercase;
@@ -2319,13 +2394,12 @@ textarea {
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-align: center;
     border-radius: 3px;
     text-transform: uppercase;
     outline: none;
     border: none;
-    
     color: #000;
     background: #fff;
 }
@@ -2339,14 +2413,12 @@ h3.modal-name.left {
     position: fixed;
     left: 50%;
     bottom: 100px;
-    
     width: 620px;
     margin-left: -310px;
     padding: 50px 0 0 0;
     background: #fff;
-    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7),
-                inset 0 7px 0 0 #ee3643;
-    color: #000000;    
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7), inset 0 7px 0 0 #ee3643;
+    color: #000000;
     z-index: 10;
 }
 
@@ -2358,12 +2430,9 @@ h3.modal-name.left {
     position: absolute;
     top: 15px;
     right: 7px;
- 
     width: 22px;
     height: 22px;
-
     font-size: 0;
-
     background-color: #fff;
     border: 0;
     outline: 0;
@@ -2372,15 +2441,14 @@ h3.modal-name.left {
 
 .modal-content-close::before,
 .modal-content-close::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 2px;
-
-  width: 19px;
-  height: 3px;
-  background-color: red;
-  border-radius: 1px;
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 19px;
+    height: 3px;
+    background-color: red;
+    border-radius: 1px;
 }
 
 .modal-content-close::before {
@@ -2402,10 +2470,9 @@ input.user-info {
     font-size: 13px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     border: 2px solid #d7dcde;
     border-radius: 2px;
-    
     background: #fff;
 }
 
@@ -2440,7 +2507,6 @@ textarea {
     margin-top: 37px;
     padding-top: 15px;
     padding-bottom: 15px;
-    
     background: #f1f1f1;
 }
 
@@ -2450,12 +2516,11 @@ textarea {
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     border-radius: 3px;
     text-transform: uppercase;
     outline: none;
     border: none;
-    
     color: #fff;
     background: #ee3643;
 }
@@ -2465,12 +2530,11 @@ textarea {
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     border-radius: 3px;
     text-transform: uppercase;
     outline: none;
     border: none;
-    
     color: #000;
     background: #fff;
 }
@@ -2484,19 +2548,17 @@ h3.modal-name.left {
     font-size: 30px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
-    
+    font-family: "Cuprum", "Arial", sans-serif;
     color: #000;
 }
 
-.ok-image::before {    
+.ok-image::before {
     position: absolute;
     content: "";
     width: 67px;
     height: 68px;
     top: 50px;
     left: 80px;
-    
     background-image: url("../img/ok-logo.jpg");
     background-repeat: no-repeat;
 }
@@ -2509,12 +2571,11 @@ h3.modal-name.left {
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-align: center;
     border-radius: 3px;
     text-transform: uppercase;
     text-decoration: none;
-    
     color: #fff;
     background: #ee3643;
 }
