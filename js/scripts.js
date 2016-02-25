@@ -19,8 +19,6 @@ map.addEventListener("click", function (event) {
     mapup.classList.add("modal-content-show");
 });
 
-
-
 closepop.addEventListener("click", function (event) {
     event.preventDefault();
     popup.classList.remove("modal-content-show");

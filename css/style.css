@@ -918,7 +918,7 @@ input[type="text"]:focus {
 }
 
 .materials::before {
-    position: absolute;
+/*    position: absolute;*/
     width: 45px;
     height: 66px;
     bottom: 27px;
@@ -1168,6 +1168,60 @@ input[type="text"]:focus {
     background-repeat: no-repeat;
 }
 
+/*
+Оформления слайдера внизу
+
+.imager {
+    position: relative;
+    width: 940px;
+    height: 285px;
+    margin: 0 auto;
+    background: grey;
+    border: 1px solid green;
+}
+
+.imager-controls {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    width: 200px;
+    height: 10px;
+    margin-left: -100px;
+    text-align: center;
+    border: 1px solid yellow;
+    z-index: 1000;
+}
+
+.imager-controls i {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 0 3px;
+    background: #fff;
+    border: 3px solid #fff;
+    vertical-align: top;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.imager-controls .active {
+    background: red;
+}
+
+.images {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    background-color: rgba(255,255,0,0.1)
+}
+
+
+--- Оформление слайдера внизу ---
+*/
+
 .bord {
     margin: 30px 0 0 0;
     vertical-align: top;
@@ -1278,16 +1332,54 @@ input[type="text"]:focus {
     background-repeat: no-repeat;
 }
 
-.buttons-of-service::after {
+.bring::after {
+    display: block;
     position: absolute;
     content: "";
     width: 468px;
     height: 240px;
-    bottom: -78px;
-    right: -620px;
+    bottom: -96px;
+    right: -219px;
     background-image: url("../img/track_and_shadow.png");
     background-repeat: no-repeat;
 }
+
+.guarantee::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 468px;
+    height: 240px;
+    bottom: -50px;
+    right: -306px;
+    background-image: url("../img/nagrada.png");
+    background-repeat: no-repeat;
+}
+
+.credit::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 468px;
+    height: 240px;
+    bottom: -43px;
+    right: -249px;
+    background-image: url("../img/credit.png");
+    background-repeat: no-repeat;
+}
+
+.bring {
+    display: none;
+}
+
+.guarantee {
+    display: block;
+}
+
+.credit {
+    display: none;
+}
+
 
 .btn-serv {
     display: block;
@@ -1305,6 +1397,21 @@ input[type="text"]:focus {
     background: #32425c;
 }
 
+.active-first {
+    background: #fff;
+    color: #32425c;
+}
+
+.active-second {
+    background: #fff;
+    color: #32425c;
+}
+
+.active-third {
+    background: #fff;
+    color: #32425c;
+}
+
 .bbot {
     border-bottom: 1px solid #293449;
 }
@@ -1313,13 +1420,8 @@ input[type="text"]:focus {
     border-top: 1px solid #405069;
 }
 
-.active {
-    background: #fff;
-    color: #32425c;
-}
-
 .buttons-result {
-    width: 280px;
+    width: 400px;
 }
 
 .buttons-result > h3 {
@@ -1336,9 +1438,27 @@ input[type="text"]:focus {
     margin-top: 23px;
     font-size: 13px;
     line-height: 24px;
-    font-family: "PT sans" "Arial", sans-serif;
-    font-weight: 600;
+    font-family: "PT sans", "Arial", sans-serif;
+    font-weight: normal;
     color: #000;
+}
+
+.btn-image {
+    display: block;
+    width: 195px;
+    margin-top: 28px;
+    margin-left: 1px;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    font-family: "Cuprum", "Arial", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #ee3643;
 }
 
 .delivery-company::before {
